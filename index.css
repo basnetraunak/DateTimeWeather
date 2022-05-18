@@ -1,0 +1,21 @@
+body{
+    margin:0%;
+    padding:0%;
+    background-color: black;
+
+}
+.timecontainer{
+    font-family:  Georgia, Times, 'Times New Roman', serif, sans-serif;
+    color: blanchedalmond;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: larger;
+    border-style: solid ;
+    border-width: medium;
+    border-color: maroon;
+    padding: 10%;
+    
+}
