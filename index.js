@@ -52,7 +52,7 @@ function getWeather(){
         });
         
        
-}setInterval(getWeather,1000000);
+}setInterval(getWeather,3000000);
 //function for dasplying weather
 function displayWeather(data){
     
@@ -123,14 +123,16 @@ function displayHourlyForecast(DataHourly){
             const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`; // now we are getting icon for this icon code @2x is removed then before because this is to be displayed in small ratio
     
             const hourlyItemHtml = `
-                                    <div class="card card text-bg-dark mb-3" style="width: 18rem;">
+                                        <div class="card" style="width: 15rem;">
                                             <div class="card-header">${itemhour}:00</div>
                                             <div class="card-body">
                                                 <img src="${iconUrl}" class="card-img-top" alt="${description}">
                                                 <p class="card-text">${temperature} C</p>
                                                 <p>Feels Like: ${feels} C</p>
                                             </div>
-                                    </div>
+                                        </div>
+                                    <div>
+                                        
                                         
             `;
             hourlyForecastDiv.innerHTML += hourlyItemHtml;// append created hourly forecast item 
@@ -140,5 +142,5 @@ function displayHourlyForecast(DataHourly){
         });
 
 }
-//creating a showImage() function which is called in displayWeather(), 
+
 
