@@ -2,10 +2,25 @@ body{
     margin:0%;
     padding:0%;
     background-color: black;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family:  Georgia, Times, 'Times New Roman', serif, sans-serif;
 
 }
 .timecontainer{
-    font-family:  Georgia, Times, 'Times New Roman', serif, sans-serif;
+    color: blanchedalmond;
+    font-weight: bolder;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+    font-size: larger;
+    
+}
+.weathercontainer{
+    background-color: #7a7265;
     color: blanchedalmond;
     font-weight: bolder;
     position: absolute;
@@ -16,6 +31,25 @@ body{
     border-style: solid ;
     border-width: medium;
     border-color: maroon;
+    border-radius: 20px;
     padding: 10%;
-    
+    backdrop-filter: blur(7px);
+    text-align: center;
+
+
+
+}
+
+
+
+#hourly-forecast{
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+h1, label, p{
+        color: #c0c0c0;
+        margin: 8px 0;
 }
