@@ -2,7 +2,7 @@ body{
     margin:0%;
     padding:0%;
     background-color: black;
-    height: 100vh;
+    
     justify-content: center;
     align-items: center;
     display: flex;
@@ -32,9 +32,10 @@ body{
     border-width: medium;
     border-color: maroon;
     border-radius: 20px;
-    padding: 10%;
+    padding: 2% 2% 15% 2%;
     backdrop-filter: blur(7px);
     text-align: center;
+    max-height: 25px;
 
 
 
@@ -43,11 +44,13 @@ body{
 
 
 #hourly-forecast{
-    margin-top: 50px;
+    margin-top: 15%;
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
+    max-width: fit-content;
+    min-width: 200px;
 }
 h1, label, p{
         color: #c0c0c0;
